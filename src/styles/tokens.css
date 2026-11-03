@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  --bg: #12151c;
+  --bg-elevated: #1b212b;
+  --bg-soft: #151a23;
+  --text: #e8edf2;
+  --text-muted: #c5ced8;
+  --line: #313846;
+  --line-strong: #526074;
+  --accent: #14756f;
+  --accent-text: #b7f0ea;
+  --accent-ink: #f4fffd;
+  --focus: #f0d78c;
+  --mark-teal: #163532;
+  --mark-teal-ink: #e7f7f4;
+  --mark-blue: #1a2740;
+  --mark-blue-ink: #e7eef8;
+  --mark-sand: #2c2822;
+  --mark-sand-ink: #f6f0e6;
+  --mark-iris: #241e38;
+  --mark-iris-ink: #f1ecf8;
+  --backdrop: rgb(5 7 10 / 0.72);
+  --font-sans: "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans KR",
+    "Noto Sans JP", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "Cascadia Code", Consolas, "Liberation Mono",
+    monospace;
+  --header-offset: 5.5rem;
+  --shadow: 0 16px 40px rgb(0 0 0 / 0.28);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f1ea;
+  --bg-elevated: #fffdf8;
+  --bg-soft: #ebe6dc;
+  --text: #1b2128;
+  --text-muted: #3e4854;
+  --line: #d5cfc3;
+  --line-strong: #8d8678;
+  --accent: #0e655f;
+  --accent-text: #0b534e;
+  --accent-ink: #f4fffd;
+  --focus: #8a4b00;
+  --backdrop: rgb(28 33 40 / 0.46);
+  --shadow: 0 16px 40px rgb(40 32 20 / 0.12);
+}

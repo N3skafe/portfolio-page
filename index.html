@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dongjoon Kim · Software developer</title>
+    <meta
+      name="description"
+      content="Software developer building practical tools and interactive applications. Public work includes a terminal helper, a local backend lab, a Windows completion alert, and an on-device YouTube controller."
+    />
+    <meta property="og:title" content="Dongjoon Kim · Software developer" />
+    <meta
+      property="og:description"
+      content="Software developer building practical tools and interactive applications. Public work includes a terminal helper, a local backend lab, a Windows completion alert, and an on-device YouTube controller."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta name="theme-color" content="#12151c" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <script>
+      ;(function () {
+        var theme = 'dark'
+        var themeColor = '#12151c'
+        try {
+          var storedTheme = localStorage.getItem('portfolio.theme')
+          if (storedTheme === 'light' || storedTheme === 'dark') theme = storedTheme
+          var storedLocale = localStorage.getItem('portfolio.locale')
+          if (storedLocale === 'en' || storedLocale === 'ko' || storedLocale === 'ja') {
+            document.documentElement.lang = storedLocale
+          }
+        } catch (error) {
+          /* Storage can be blocked. English and the dark theme stay in place. */
+        }
+        if (theme === 'light') themeColor = '#f4f1ea'
+        document.documentElement.dataset.theme = theme
+        var meta = document.querySelector('meta[name="theme-color"]')
+        if (meta) meta.setAttribute('content', themeColor)
+      })()
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="font-family: Segoe UI, sans-serif; padding: 1rem">
+        Dongjoon Kim / 김동준. This page needs JavaScript.
+        <a href="https://github.com/N3skafe">GitHub</a>
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
